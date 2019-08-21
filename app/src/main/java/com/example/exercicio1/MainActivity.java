@@ -54,10 +54,33 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        DecimalFormat df = new DecimalFormat("#0.00");
+       /* DecimalFormat df = new DecimalFormat("#0.00");
 
-        String formatado = "Nota: " + df.format(media);
+        String formatado = "Nota: " + df.format(media);*/
 
-        textDivisao.setText(formatado);
+        String nota = null;
+
+        if (media >9){
+
+            nota = "A";
+
+        }else if (media <9 && media >8){
+
+            nota = "B";
+
+        }else if (media <8 && media >7){
+
+            nota = "C";
+
+        }else if (media <7 && media >4){
+
+            nota = "D";
+
+        }else if (media<4){
+
+            nota = "F";
+        }
+
+        textDivisao.setText(nota);
     }
 }
