@@ -64,21 +64,21 @@ public class MainActivity extends AppCompatActivity {
 
             nota = "A";
 
-        }else if (media <9 && media >8){
+        }else if (media <=9 && media >=8){
 
             nota = "B";
 
-        }else if (media <8 && media >7){
+        }else if (media <8 && media >=7){
 
             nota = "C";
 
-        }else if (media <7 && media >4){
+        }else if (media <7 && media >=4){
 
             nota = "D";
 
         }else if (media<4){
 
-            nota = "F";
+            nota = "E";
         }
 
         textDivisao.setText(nota);
